@@ -1,7 +1,16 @@
 publish: dist
 
-routes:
-  - type: redirect
-    path: /*
-    destination: /index.html
-    status: 200
+services:
+  - type: web
+    name: acsii
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    env: static
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
