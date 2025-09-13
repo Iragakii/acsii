@@ -1,11 +1,16 @@
 publish: dist
 
 services:
-  - type: web
+  - type: static
     name: acsii-iragaki
-    env: static
     buildCommand: npm install && npm run build
+    publishPath: dist
     staticPublishPath: ./dist
+    headers:
+      - source: /*
+        headers:
+          - key: Cache-Control
+            value: no-cache
     routes:
       - type: rewrite
         source: /*
