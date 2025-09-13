@@ -1,0 +1,7 @@
+publish: dist
+
+routes:
+  - type: redirect
+    path: /*
+    destination: /index.html
+    status: 200
