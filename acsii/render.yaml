@@ -13,6 +13,10 @@ services:
             value: no-cache
           - key: Access-Control-Allow-Origin
             value: "*"
+          - key: Permissions-Policy
+            value: "camera=self"
+          - key: Feature-Policy
+            value: "camera 'self'"
     routes:
       - type: rewrite
         source: "/*"
