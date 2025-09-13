@@ -1,3 +1,3 @@
 #!/bin/sh
 npm install
-npx vite build
+./node_modules/.bin/vite build

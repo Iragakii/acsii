@@ -1,6 +1,6 @@
 {
   "framework": null,
-  "buildCommand": "./node_modules/.bin/vite build",
+  "buildCommand": "sh vercel-build.sh",
   "outputDirectory": "dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
