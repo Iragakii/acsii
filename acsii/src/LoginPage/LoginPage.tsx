@@ -21,7 +21,7 @@ const LoginPage = () => {
 
   return (
     <>
-      <div className="overflow-y-hidden h-screen">
+      <div className="overflow-y-hidden !h-screen">
         <section className="w-full h-screen relative overflow-hidden">
           <BackGroundLogin />
          
