@@ -1,0 +1,16 @@
+
+body{
+  background-color: black;
+  overflow-y: hidden;
+}
+.normal-btn {
+ top:48rem;
+  position: absolute;
+  margin-left: 1rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #61dca3;
+  color: green;
+  border-radius: 5rem;
+  cursor: pointer;
+  font-weight: bold;  
+}
